@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portfólio</title>
+
+
+    <!---Cabeçalho-Main-->
+
+ <div class="background">
+    <nav>
+        <img src="logo.png">
+        <ul class="cabeçalho-link">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobremim">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul><!--cabeçalho-link-->
+
+        <a href="#servicos" class="btn">Serviços</a>
+    </nav>
+
+    <div  id="home"class="Main">
+        <h4>Ola, meu nome é</h4>
+        <h2>Manuela  <span>Edvania</span></h2>
+        <h3>Eu sou uma desenvolvedora web</h3>
+        <div class="Container-btn">
+            <div class="social-media">
+                <a href="https://github.com/MEdvania" target="_black" rel="external1">Github</a>
+                <a href="https://www.linkedin.com/in/manuela-fran%C3%A7a-8b3684217/"target="_black" rel="external1">Linkedln</a>
+            </div>
+        </div><!--Container-btn-->
+    </div><!--Main-->
+</div><!--background-->
+
+
+            
+            
+
+           
+
+    <section class="C-sobre" data-aos="fade-up">
+        <div class="image">
+            <img src="about .jpeg">
+        </div><!--image-->
+
+        <div  id="sobremim" class="Sobre-mim">
+            <h1>Sobre mim</h1>
+            <h4>Desenvolvedora <span>& Designer</span></h4>
+            <p> Óla , Tudo bem ? Me Chamo Manuela Edvania de França , tenho 19 anos
+                <br>sou formada na linguagem front-end  onde possuo conhecimento em montar códigos 
+                <br>limpos e um Designer de execelência. e também possuo conhecimento no desigenr gráfico 
+                <br>onde faço criação de imagens corporativa sendo logotipo , projetos editoriais, criação de imagens 
+                <br>e entre outros. e também na aplicação UX & UI Designer faço elaboração de mapas de navegação
+                <br>  do usuário teste de usabilidades , criação , desenvolvimento de soluções inovadoras e atraentes . </p>
+                <a href="file:///C:/Users/Win/Downloads/Curriculo%20-%20Manuela%20Edvania%20de%20Fran%C3%A7a.pdf"target="_black" rel="external1">
+                <button class="btn">Currículo</button>
+                </a>
+
+        </div><!--Sobre-mim-->
+    </section><!---C-sobre-->
+
+
+    <section id="servicos"class="Container" data-aos="fade-up">
+        <h1>Serviços</h1>
+
+        <div class="C-card" data-aos="fade-up">
+            <div class="Card">
+                <img src="phone.png" alt="phone">
+                <h3>UX & UI Designer     </h3>
+                <h5>elaboração de mapas de navegação
+                     <br>do usuário, testes de usabilidades
+                    <br> produto digital, 
+                    <br> criação visual interessante.</h5>
+            </div><!--Card-->
+
+            <div class="Card">
+                <img src="desktop.png" alt="desktop">
+                <h3>Desenvolvimento de front-end</h3>
+                <h5>interface gráfica do projeto
+                    <br> aplicação com a qual o usuário irá
+                    <br> interagir diretamente seja  em softwares,
+                    <br>sites, aplicativos, etc.</h5>
+            </div><!--Card-->
+
+            <div class="Card">
+                <img src="grafico.jpg" alt="grafico">
+                <h3>Designer Grafico</h3>
+                <h5>Criação da imagem corporativa, 
+                    <br> sendo logotipos, cartões de visita, 
+                    <br> catálogos, folhetos,projetos editoriais, 
+                    <br>entre outros.</h5>
+            </div><!--Card-->
+        </div><!--C-card-->
+
+    </section><!--conatiner-->
+
+
+    <section id="projetos"class="C-projetos" data-aos="fade-up">
+        <h1>Projetos</h1>
+        <div class="img-projetos" data-aos="fade-up">
+            <img src="projeto-1.png" alt="projeto">
+            <img src="projeto-2.png" alt="projeto">
+        </div><!--img-projetos-->
+        <div class="img-2"><img src="projeto-3.png" alt="projeto"></div>
+
+    </section><!--C-projetos-->
+
+    <section id="contato"class="C-rodapé" >
+        <h1> Se interessou pelo meu trabalho ?   <br>me envie uma mensagem e conversaremos para fecharmos um projeto </h1>
+       <form>
+        <input type="email" name="email" id="email" placeholder="Envie uma mensagem">
+        <input type="submit" name="submit" value="Enviar">
+       </form>
+    </section><!--C-rodapé-->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
+
+</body>
+</html>
